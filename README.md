@@ -15,4 +15,4 @@ prereqs:
 ```
 
 Note:
-As an alternative to requests.rest you can use Postman app to test endpoints also.
+As an alternative to [requests.rest](https://github.com/deepakacharya/JWT/blob/main/requests.rest) you can use Postman app to test endpoints also.
