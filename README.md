@@ -7,11 +7,15 @@ prereqs:
 
 ### Commands to Run:
 ```
-1. git clone https://github.com/deepakacharya/JWT.git (Clone this project)
-2. npm install (will create node_modules folder locally with all dependencies installed)
-3. npm run auth-server (from Terminal 1, exposed on port 3000)
-4. npm run data-sever (from Terminal 2, exposed on port 4000)
-5. Then use requests.rest file to test endpoints (install  extension REST Client to use .rest files)
+1.> git clone https://github.com/deepakacharya/JWT.git
+       (Clone this project)
+2.> npm install
+       (will create node_modules folder locally with all dependencies installed)
+3.> npm run auth-server
+       (exposed on port 3000)
+4.> npm run data-sever
+       (run from another Terminal, exposed on port 4000)
+5. Then use requests.rest file to test endpoints (install extension REST Client to use .rest files)
 ```
 
 Note:
