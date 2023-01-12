@@ -1,24 +1,39 @@
-### LOGIN
+### LOGIN : for Deepak
 POST http://localhost:3000/login
 Content-Type: application/json
-
 {
-    "username": "Alok"
+    "username": "Deepak"
 }
 
-### GET POSTS
+### GET POSTS : pass accessToken(from /login response) in Authorization header
 GET http://localhost:4000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxvayIsImlhdCI6MTY3MzQ1NTQyOSwiZXhwIjoxNjczNDU1NDU5fQ.9joS7qqJFI6IlSng40--f8lifqcOdDe4Ovf_rw_xZTE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGVlcGFrIiwiaWF0IjoxNjczNTExNDc0LCJleHAiOjE2NzM1MTE1MDR9.SYKiYiZAVc8yzrHsG3b62hoLEPfyZMmtUXGzHHtBnWI
 
-### GET NEW TOKEN
+### LOGIN : for Sharad
+POST http://localhost:3000/login
+Content-Type: application/json
+{
+    "username": "Sharad"
+}
+
+### GET POSTS : pass accessToken(from /login response) in Authorization header
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hhcmFkIiwiaWF0IjoxNjczNTExNTAyLCJleHAiOjE2NzM1MTE1MzJ9.cNVqwcBsZJbM4cPFJo__OZ1FEpcJh_URNgndn3LpHls
+
+
+
+
+
+### GET NEW TOKEN after accessToken expired: pass refreshToken(from /login response) as token below
+## New token you can get from /login also, but that will generate multiple refreshTokens also and those don't have expiration date. so it's not secure to generate mutiple refresh tokens
 POST http://localhost:3000/auth
 Content-Type: application/json
-
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxvayIsImlhdCI6MTY3MzQ1NTM2MH0.gRIggNM6IDOrPtzLcsTxNa_3XooM0H1kb4xIv4YytUQ"
 }
 
-### LOGOUT
+### LOGOUT : pass refreshToken(from /login response) as token below
+## This will delete the refreshToken from stored array.
 DELETE http://localhost:3000/logout
 Content-Type: application/json
 

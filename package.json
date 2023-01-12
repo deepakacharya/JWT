@@ -1,6 +1,6 @@
 {
-  "name": "JWT",
-  "version": "1.0.1",
+  "name": "new",
+  "version": "1.0.0",
   "description": "jsonwebtoken",
   "main": "index.js",
   "scripts": {

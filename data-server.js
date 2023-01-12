@@ -2,13 +2,14 @@ const express = require('express')
 const app = express()
 const {authenticateToken} = require("./utils/auth-utils")
 
+// In actual projects you will get this data from DB
 const posts = [
     {
         username: 'Deepak',
         title: 'Post 1'
     },
     {
-        username: 'Alok',
+        username: 'Sharad',
         title: 'Post 1'
     },
 

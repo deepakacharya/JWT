@@ -5,6 +5,7 @@ const {createToken, createRefreshToken, verifyRefreshToken} = require("./utils/a
 
 app.use(express.json());
 
+// Usually in actual projects this array will get stored in some aws params store
 let refreshTokens = [];
 
 app.post('/login', (req, res) => {
