@@ -1,5 +1,5 @@
 # JWT (<a href="https://www.npmjs.com/package/jsonwebtoken" target="_blank">jsonwebtoken</a>)
-## A fully functional example project on how to use jsonwebtoken library within NodeJs...
+## A fully functional example project on how to use jsonwebtoken package within NodeJs...
 prereqs:
 * Install Visual Studio Code
 * Install REST Client(Author: Huachao Mao) extension within VSCode
