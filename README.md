@@ -2,8 +2,8 @@
 ## A fully functional example project on how to use jsonwebtoken package within NodeJs...
 prereqs:
 * Install Visual Studio Code
-* Install REST Client(Author: Huachao Mao) extension within VSCode
-* I used npm 16.5
+* Install <a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client" target="_blank">REST Client</a>(Author: Huachao Mao) extension within VSCode
+* I used npm 16.5.0
 
 ### Commands to Run:
 ```
