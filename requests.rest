@@ -1,0 +1,27 @@
+### LOGIN
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Alok"
+}
+
+### GET POSTS
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxvayIsImlhdCI6MTY3MzQ1NTQyOSwiZXhwIjoxNjczNDU1NDU5fQ.9joS7qqJFI6IlSng40--f8lifqcOdDe4Ovf_rw_xZTE
+
+### GET NEW TOKEN
+POST http://localhost:3000/auth
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxvayIsImlhdCI6MTY3MzQ1NTM2MH0.gRIggNM6IDOrPtzLcsTxNa_3XooM0H1kb4xIv4YytUQ"
+}
+
+### LOGOUT
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxvayIsImlhdCI6MTY3MzQ1NTM2MH0.gRIggNM6IDOrPtzLcsTxNa_3XooM0H1kb4xIv4YytUQ"
+}
