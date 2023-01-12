@@ -1,5 +1,3 @@
-//npm i express jsonwebtoken dotenv http-status-codes
-//npm i --save-dev nodemon
 {
   "name": "JWT",
   "version": "1.0.0",
