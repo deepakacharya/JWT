@@ -1,7 +1,7 @@
 {
   "name": "JWT",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "jsonwebtoken",
   "main": "index.js",
   "scripts": {
     "auth-server": "nodemon auth-server.js",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Deepak",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
